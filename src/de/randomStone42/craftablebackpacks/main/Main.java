@@ -54,9 +54,9 @@ public class Main extends JavaPlugin {
 		getCommand("backpacksmall").setExecutor(new SmallBackpackCommand());
 		getCommand("backpackmedium").setExecutor(new MediumBackpackCommand());
 		getCommand("backpackbig").setExecutor(new BigBackpackCommand());
-		getCommand("givesmallbackpack").setExecutor(new GiveBigBackpack());
+		getCommand("givesmallbackpack").setExecutor(new GiveSmallBackpack());
 		getCommand("givemediumbackpack").setExecutor(new GiveMediumBackpack());
-		getCommand("givebigbackpack").setExecutor(new GiveSmallBackpack());
+		getCommand("givebigbackpack").setExecutor(new GiveBigBackpack());
 
 		PluginManager pluginManager = Bukkit.getPluginManager();
 		pluginManager.registerEvents(new SmallBackpack(), this);
