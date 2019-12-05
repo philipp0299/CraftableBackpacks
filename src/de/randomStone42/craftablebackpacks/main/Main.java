@@ -10,6 +10,9 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import de.randomStone42.craftablebackpacks.commands.BigBackpackCommand;
+import de.randomStone42.craftablebackpacks.commands.GiveBigBackpack;
+import de.randomStone42.craftablebackpacks.commands.GiveMediumBackpack;
+import de.randomStone42.craftablebackpacks.commands.GiveSmallBackpack;
 import de.randomStone42.craftablebackpacks.commands.MediumBackpackCommand;
 import de.randomStone42.craftablebackpacks.commands.SmallBackpackCommand;
 import de.randomStone42.craftablebackpacks.items.BigBackpack;
@@ -51,6 +54,9 @@ public class Main extends JavaPlugin {
 		getCommand("backpacksmall").setExecutor(new SmallBackpackCommand());
 		getCommand("backpackmedium").setExecutor(new MediumBackpackCommand());
 		getCommand("backpackbig").setExecutor(new BigBackpackCommand());
+		getCommand("givesmallbackpack").setExecutor(new GiveBigBackpack());
+		getCommand("givemediumbackpack").setExecutor(new GiveMediumBackpack());
+		getCommand("givebigbackpack").setExecutor(new GiveSmallBackpack());
 
 		PluginManager pluginManager = Bukkit.getPluginManager();
 		pluginManager.registerEvents(new SmallBackpack(), this);
