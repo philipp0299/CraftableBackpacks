@@ -1,0 +1,18 @@
+name: CraftableBackpacks
+version: 1.0
+api-version: 1.13
+main: de.randomStone42.craftablebackpacks.main.Main
+
+commands:
+   backpacksmall:
+      description: opens a small Backpack!
+   backpackmedium:
+      description: opens a medium Backpack!
+   backpackbig:
+      description: opens a big Backpack!
+   givesmallbackpack:
+      description: gives a small Backpack!
+   givemediumbackpack:
+      description: gives a medium Backpack!
+   givebigbackpack:
+      description: gives a big Backpack!
